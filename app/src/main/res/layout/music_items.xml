@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#272525"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+
+    android:id="@+id/music_item">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:id="@+id/img_music"
+            android:src="@drawable/ic_sss"
+            android:padding="@dimen/_3sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="Music Name"
+            android:layout_toEndOf="@id/img_music"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/menu_more"
+            android:id="@+id/music_file_name"
+            android:textColor="#131313"/>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:id="@+id/menu_more"
+            android:src="@drawable/ic_more"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:padding="@dimen/_2sdp"/>
+        <View
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_below="@+id/img_music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/black"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

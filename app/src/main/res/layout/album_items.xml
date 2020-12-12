@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_130sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/album_items"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="@dimen/_170sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0E0E0E"
+        android:id="@+id/layoutRelay">
+
+        <ImageView
+            android:id="@+id/img_album"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-7dp"
+            android:layout_marginBottom="33dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name_album"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Album"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_3sdp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
